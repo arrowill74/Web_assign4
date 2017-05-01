@@ -54,8 +54,13 @@ aside {
 }
 
 .icon {
+    text-align: center;
+}
+
+.icon img {
     width: 60px;
     text-align: center;
+    margin: 0px auto;
 }
 
 .title-box {
@@ -90,10 +95,6 @@ aside {
         max-width: 480px;
         margin-top: 20px;
     }
-    .icon {
-        width: 60px;
-        text-align: center;
-    }
     #nav-info li {
         font-size: 1.7rem;
         line-height: 20px;
@@ -115,7 +116,7 @@ aside {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
     #wrapper {
         max-width: 768px;
         margin-top: 30px;
@@ -124,9 +125,15 @@ aside {
         width: 100px;
         text-align: center;
     }
+    #nav-info{
+        width: 768px;
+    }
     #nav-info li {
         font-size: 1.7rem;
         line-height: 20px;
+    }
+    .pic {
+        display: block;
     }
     .pic img {
         width: 100%;
@@ -139,11 +146,11 @@ aside {
         font-size: 2.2rem;
         line-height: 30px;
         text-align: right;
-        display: inline-block;
-        float: right;
+        display: block;
     }
     #nd-nav {
         display: block;
+        margin-top: -90px;
     }
     #nd-nav .option {
         display: inline-block;
@@ -193,11 +200,11 @@ aside {
         font-size: 2.2rem;
         line-height: 30px;
         text-align: right;
-        display: inline-block;
-        float: right;
+        display: block;
     }
     #nd-nav {
         display: block;
+        margin-top: -90px;
     }
     #nd-nav .option {
         display: inline-block;
